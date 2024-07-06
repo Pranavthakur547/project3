@@ -27,16 +27,32 @@ section {
 
 .row {
     display: flex;
+    flex-direction: row;
+        flex-wrap: wrap;
     margin-left: -12px;
     margin-right: -12px;
 }
 
-.col-3 {
-    width: 25%;
+.col-12 {
+    width: 100%;
     padding-left: 12px;
     padding-right: 12px;
 }
-
+/* .col-sm-6 {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-md-4 {
+    width: 33.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+ .col-lg-3 {
+            width: 25%;
+            padding-left:12px;
+            padding-right:12px;
+      } */
 
 .h6 {
     font-family: Poppins;
@@ -103,14 +119,46 @@ h5 {
     box-shadow: 1px 7px 10px 0px #ff530080;
 
 }
-.card:hover .icon-box{
+
+.card:hover .icon-box {
     right: 5px;
 
 }
 
-.svg-box:hover{
+.svg-box:hover {
     background-color: #FF5300;
 }
-.svg-box:hover path{
-    fill:white;
+
+.svg-box:hover path {
+    fill: white;
+}
+
+
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+@media (min-width:576px) {
+    .col-sm-6 {
+        width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width:768px) {
+    .col-md-4 {
+        width: 33.33%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width:992px) {
+    .col-lg-3 {
+        width: 25%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 }
